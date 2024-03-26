@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing component</title>
+    <!-- Website img -->
+    <link rel="icon" type="image/svg+xml" href="./best-prise.jpg" />
+    <!-- CSS-FILES -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- PRICING -->
+        <main class="pricing">
+            <h2 class="pricing__header">Bizning Narximiz</h2>
+
+            <!-- FORM -->
+            <form class="form" action="https://htmlacademy.ru" method="GET">
+                <input class="form__input-annually visually-hidden" type="radio" id="anually" name="pricing"
+                    value="anually">
+                <input class="form__input-monthly visually-hidden" type="radio" id="monthly" name="pricing"
+                    value="monthly" checked>
+                <label class="form__label form__label-annually" for="anually">Har yili</label>
+                <!-- form__CONTROLLER -->
+                <div class="form__controll">
+                    <div class="form__controller"></div>
+                    <label class="form__control-annually" for="anually"></label>
+                    <label class="form__control-monthly" for="monthly"></label>
+                </div>
+                <label class="form__label-monthly" for="monthly">Oylik</label>
+            </form>
+
+            <!-- PRICING__BOXES -->
+            <div class="pricing__boxes">
+
+                <div class="pricing__box">
+                    <h3 class="pricing__box-heading">Asosiy</h3>
+                    <div class="pricing__box-price box-price">
+                        <span class="pricing__box-price-mark">$</span>
+                        <span class="pricing__box-price-number number-basic">19.99</span>
+                    </div>
+                    <div class="pricing__box-components">
+                        <span class="pricing__box-component">500 GB xotira</span>
+                        <span class="pricing__box-component">2 ta foydalanuvchiga ruxsat berilgan</span>
+                        <span class="pricing__box-component">3 GB gacha yuboring</span>
+                    </div>
+                    <button class="main-button">Batafsil ma'lumot</button>
+                </div>
+
+                <div class="pricing__box pricing__box--active">
+                    <h3 class="pricing__box-heading">Professional</h3>
+                    <div class="pricing__box-price pricing__box-price--active">
+                        <span class="pricing__box-price-mark pricing__box-price-mark--active">$</span>
+                        <span
+                            class="pricing__box-price-number pricing__box-price-number--active number-prof">24.99</span>
+                    </div>
+                    <div class="pricing__box-components">
+                        <span class="pricing__box-component pricing__box-component---active">1 TB saqlash</span>
+                        <span class="pricing__box-component pricing__box-component--active">5 ta foydalanuvchiga ruxsat
+                            berilgan</span>
+                        <span class="pricing__box-component pricing__box-component--active">10 GB gacha yuboring</span>
+                    </div>
+                    <button class="main-button main-button--active">Batafsil ma'lumot</button>
+                </div>
+
+                <div class="pricing__box pricing__box-third">
+                    <h3 class="pricing__box-heading">Ustoz</h3>
+                    <div class="pricing__box-price">
+                        <span class="pricing__box-price-mark">$</span>
+                        <span class="pricing__box-price-number number-master">39.99</span>
+                    </div>
+                    <div class="pricing__box-components">
+                        <span class="pricing__box-component">2 TB saqlash</span>
+                        <span class="pricing__box-component">10 ta foydalanuvchiga ruxsat berilgan</span>
+                        <span class="pricing__box-component">20 GB gacha yuboring</span>
+                    </div>
+                    <button class="main-button">Learn more</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
